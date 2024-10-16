@@ -14,7 +14,7 @@ pipeline {
     stage('Create Package') {
       steps {
         echo 'This stage will compile, test, package my application'
-        sh 'mvn package'
+        sh 'mvn clean package'
                           }
             }
     stage('Generate Test Report') {
